@@ -1,0 +1,29 @@
+<html>
+  <head></head>
+  <body>
+    <button>
+      click
+    </button>
+
+  </body>
+  <script>
+  function startGame(){
+    let counter =0;
+
+
+    document.querySelector('button').addEventListener('click',()=>{
+      ++counter;
+    });
+
+    setTimeout(()=>{
+      if(counter > 5){
+        alert('You Won, your clicks: '+counter);
+      }
+      else{
+        alert('you lost');
+      }
+    },2000);
+  }
+  startGame();  
+  </script>
+</html>
